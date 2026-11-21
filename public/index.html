@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ankush Vishwakarma | Developer Portfolio</title>
+  <meta name="description" content="Ankush Vishwakarma's portfolio of AI applications, full-stack web projects, and a Chrome extension for focused LeetCode practice.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Ankush Vishwakarma | Developer Portfolio">
+  <meta property="og:description" content="AI applications, full-stack web projects, and a Chrome extension by Ankush Vishwakarma.">
+  <!-- TODO: Add og:url and og:image with absolute HTTPS URLs after choosing a public URL and social preview image. -->
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="top">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Ankush Vishwakarma, back to top">AV</a>
+      <nav aria-label="Main navigation">
+        <ul class="nav-list" role="list">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container" id="main" tabindex="-1">
+    <section class="hero" aria-labelledby="name">
+      <div>
+        <p class="role">AI &amp; Full-Stack Developer</p>
+        <h1 id="name">Ankush Vishwakarma</h1>
+        <p class="intro">Electrical engineering student building AI tools for document Q&amp;A, research search, and support ticket management.</p>
+        <div class="actions">
+          <a class="button primary" href="#projects">Projects</a>
+          <a class="button" href="assets/resume.pdf" download="Ankush-Vishwakarma-Resume.pdf" aria-label="Download Resume (PDF)">
+            <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m-4-4 4 4 4-4M5 16v4h14v-4"/></svg>
+            Resume
+          </a>
+          <a class="button" href="#contact">Contact</a>
+        </div>
+      </div>
+      <div class="photo-placeholder">
+        <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"><circle cx="12" cy="8" r="3.4"/><path d="M5 20v-1a7 7 0 0 1 14 0v1"/></svg>
+        <span>TODO: add photo</span>
+      </div>
+    </section>
+
+    <section class="section" id="about" aria-labelledby="about-heading">
+      <h2 id="about-heading">About</h2>
+      <p class="about-copy">I’m pursuing a B.Tech in Electrical Engineering at Netaji Subhash University of Technology. My AI projects use retrieval-augmented generation to answer questions about uploaded documents and summarize research papers. I’ve also built a full-stack support ticket platform and a Chrome extension for focused LeetCode practice.</p>
+    </section>
+
+    <section class="section" id="skills" aria-labelledby="skills-heading">
+      <h2 id="skills-heading">Skills</h2>
+      <dl class="skills">
+        <div><dt>Languages</dt><dd>C++, Python, JavaScript, SQL, HTML, CSS</dd></div>
+        <div><dt>Frontend</dt><dd>React 19, Vite, Recharts, Chrome Extensions (Manifest V3), MutationObserver</dd></div>
+        <div><dt>Backend &amp; APIs</dt><dd>FastAPI, Node.js, Express 5, MongoDB, Mongoose, REST APIs, JWT, bcrypt, Nodemailer, Service Workers, Chrome Storage API, Chrome Alarms API</dd></div>
+        <div><dt>AI &amp; ML</dt><dd>Groq (Llama 3.3 and 3.1), LangChain, RAG, tool-calling agents, Sentence Transformers, embeddings, FastEmbed, FAISS, vector search, semantic search, KeyBERT, DistilBART, PyMuPDF</dd></div>
+        <div><dt>Tools &amp; hosting</dt><dd>Git, Render, Vercel</dd></div>
+      </dl>
+    </section>
+
+    <section class="section" id="projects" aria-labelledby="projects-heading">
+      <h2 id="projects-heading">Projects</h2>
+      <div class="project-grid">
+        <article class="project">
+          <h3>AI Legal Assistance</h3>
+          <p>Answers questions about uploaded legal PDFs using retrieval-augmented generation. Responses cite the source filename, page number, and relevant excerpt.</p>
+          <ul class="tags" role="list"><li>Python</li><li>FastAPI</li><li>LangChain</li><li>FAISS</li><li>FastEmbed</li><li>Groq Llama 3.3 70B</li><li>PyMuPDF</li></ul>
+          <ul class="project-links" role="list">
+            <li><a href="https://github.com/ankush-exploring/AI-Legal-Assistance" aria-label="AI Legal Assistance on GitHub">GitHub</a></li>
+            <li><a href="https://ai-legal-assistance-08h8.onrender.com" aria-label="AI Legal Assistance live demo">Live demo</a></li>
+          </ul>
+        </article>
+        <article class="project">
+          <h3>Sortify</h3>
+          <p>Support ticket manager that uses AI to prioritize tickets, identify required skills, and draft resolution notes. Assigns moderators by skill and falls back to an administrator.</p>
+          <ul class="tags" role="list"><li>React 19</li><li>Node.js</li><li>Express 5</li><li>MongoDB</li><li>Groq Llama 3.3</li><li>JWT</li><li>Nodemailer</li></ul>
+          <ul class="project-links" role="list">
+            <li><a href="https://github.com/ankush-exploring/sortify" aria-label="Sortify on GitHub">GitHub</a></li>
+            <li><a href="https://sortify-hiduifhfn-exploring2.vercel.app/" aria-label="Sortify live demo">Live demo</a></li>
+          </ul>
+        </article>
+        <article class="project">
+          <h3>Neural ArXiv</h3>
+          <p>Semantic search across 50,000 research papers with 0.88 s average retrieval latency. A tool-calling agent can search and summarize papers, extract keywords, or do both.</p>
+          <ul class="tags" role="list"><li>Python</li><li>Sentence Transformers</li><li>FAISS</li><li>LangChain</li><li>Groq Llama 3.1 8B</li><li>KeyBERT</li><li>DistilBART</li></ul>
+          <ul class="project-links" role="list">
+            <li class="todo">TODO: confirm GitHub repo</li>
+            <li class="todo">TODO: add live demo</li>
+          </ul>
+        </article>
+        <article class="project">
+          <h3>LeetLock</h3>
+          <p>Manifest V3 Chrome extension for focused LeetCode practice. Hides hints and difficulty labels, blocks nine AI platforms during practice, and tracks focus in a local dashboard.</p>
+          <ul class="tags" role="list"><li>React 19</li><li>Vite</li><li>Recharts</li><li>Chrome MV3</li><li>Service Workers</li><li>MutationObserver</li><li>Chrome Storage API</li></ul>
+          <ul class="project-links" role="list">
+            <li class="todo">TODO: confirm GitHub repo</li>
+            <li class="todo">TODO: add live demo or extension listing</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="education" aria-labelledby="education-heading">
+      <h2 id="education-heading">Education</h2>
+      <ul class="entries" role="list">
+        <li>
+          <div class="entry-heading"><h3>Netaji Subhash University of Technology</h3><time datetime="2027">2027</time></div>
+          <p>B.Tech in Electrical Engineering · CGPA 7.9</p>
+        </li>
+        <li>
+          <div class="entry-heading"><h3>Rajkiya Sarvodaya Bal Vidyalay, Delhi</h3><time datetime="2022">2022</time></div>
+          <p>CBSE Class XII · 84%</p>
+        </li>
+        <li>
+          <div class="entry-heading"><h3>G.R. Convent School</h3><time datetime="2020">2020</time></div>
+          <p>CBSE Class X · 94%</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="section" id="achievements" aria-labelledby="achievements-heading">
+      <h2 id="achievements-heading">Certifications &amp; achievements</h2>
+      <ul class="entries" role="list">
+        <li>
+          <div class="entry-heading"><h3>Agentic AI Certified Foundations Associate</h3><time datetime="2026-08">Aug 2026</time></div>
+          <p>Oracle University</p>
+        </li>
+        <li>
+          <div class="entry-heading"><h3>Amazon ML Challenge</h3><time datetime="2026">2026</time></div>
+          <p>Ranked 159th with a score of 0.989136. Built a business entity resolution system using character n-gram TF-IDF retrieval, LightGBM scoring, and neural reranking with Qwen, BGE-M3, and DistilBERT.</p>
+        </li>
+        <li>
+          <div class="entry-heading"><h3>NPTEL Certification in IIOT</h3><span>Jan–Apr 2026</span></div>
+          <p>IIT Kharagpur (NPTEL–SWAYAM) · 94%</p>
+        </li>
+        <li>
+          <div class="entry-heading"><h3>NPTEL Certification in Ethical Hacking</h3><span>Jul–Oct 2025</span></div>
+          <p>IIT Kharagpur (NPTEL–SWAYAM) · 78%</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="section contact" id="contact" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Contact</h2>
+      <ul class="contact-links" role="list">
+        <li><a href="mailto:ankushvishwakarma837@gmail.com">ankushvishwakarma837@gmail.com</a></li>
+        <li><a href="https://github.com/ankush-exploring">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/ankush-vishwakarma-b48b1036b/">LinkedIn</a></li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
