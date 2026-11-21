@@ -18,9 +18,7 @@ python -m http.server 8000 --directory public
 ## TODOs
 
 - Add a photo.
-- Confirm the Neural ArXiv repository. Both resumes point to a repository named `Fanite`.
-- Confirm the LeetLock repository. Both resumes point to the general GitHub profile.
-- Add a Neural ArXiv live demo link and a LeetLock demo or extension listing.
+- Add a Neural ArXiv live demo link.
 - After choosing a public site URL and social preview image, add their absolute URLs as `og:url` and `og:image` in `public/index.html`.
 
 The downloadable PDF is resume 2 with the phone number removed. It was chosen for its broader technical skills section.
