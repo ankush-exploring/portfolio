@@ -162,22 +162,14 @@ h1 {
 .button.primary:hover { background: var(--accent-hover); border-color: var(--accent-hover); }
 .button svg { width: 1.1rem; height: 1.1rem; }
 
-.photo-placeholder {
-  display: grid;
-  place-items: center;
-  align-content: center;
-  gap: 0.55rem;
-  min-height: 8.25rem;
-  min-width: 8.25rem;
-  padding: 0.75rem;
-  border: 1px dashed var(--border);
+.portrait {
+  display: block;
+  width: 9rem;
+  max-width: 100%;
+  height: auto;
+  border: 1px solid var(--border);
   border-radius: 0.75rem;
-  background: var(--surface);
-  color: var(--muted);
-  font-size: 0.875rem;
 }
-
-.photo-placeholder svg { width: 2rem; height: 2rem; color: var(--accent); }
 
 .section {
   border-top: 1px solid var(--border);
@@ -253,7 +245,6 @@ h3 { font-size: 1.0625rem; }
 }
 
 .project-links a, .contact-links a { font-weight: 650; }
-.todo { color: var(--muted); }
 
 .entries li + li {
   margin-top: 0.9rem;
@@ -277,7 +268,7 @@ h3 { font-size: 1.0625rem; }
 
 @media (max-width: 39rem) {
   .hero, .skills div, .project-grid { grid-template-columns: minmax(0, 1fr); }
-  .photo-placeholder { justify-self: start; min-height: 6.5rem; }
+  .portrait { width: 6.75rem; }
 }
 
 @media (max-width: 25rem) {
